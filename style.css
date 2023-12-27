@@ -12,11 +12,6 @@ header {
   background-color: #333;
   padding: 0px 0px;
 }
-@media (max-width: 300px){
-  header {
-    padding: 0;
-  }
-}
 
 nav ul {
   list-style: none;
@@ -38,6 +33,7 @@ nav a {
   font-size: 16px;
   top: 10px;
 }
+
 
 nav a:hover {
   color: #ff9900; /* Cor do texto quando o mouse está sobre o link */
@@ -80,6 +76,7 @@ body {
 
   background: var(--color-black);
 }
+
 
 .person-content div h1{
   color: transparent;
@@ -216,3 +213,54 @@ body {
     color: var(--color-blue);
   }
 }
+
+
+
+/* Adicione estas regras no final do seu CSS existente */
+
+/* Tornar o header mais compacto em telas pequenas */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+
+  nav li {
+    margin-right: 10px;
+  }
+
+  nav a {
+    position: relative;
+    right: 60px;
+    font-size: 10px;
+    top: 5px;
+  }
+
+  .links img {
+    width: 15px;
+    left: 90%;
+    top: -13px;
+    transform: translateX(-50%);
+  }
+}
+
+/* Tornar a seção #person mais responsiva */
+@media screen and (max-width: 768px) {
+  #person {
+    flex-direction: column;
+  }
+
+  .person-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .person-background {
+    width: 100%;
+  }
+
+  .profile-photo {
+    width: 80%;
+  }
+}
+
+/* Adicionar mais media queries conforme necessário */
