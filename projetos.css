@@ -1,12 +1,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: black;
-}
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
+    background: white;
 }
 
 header {
@@ -23,7 +18,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 10px; /* Reduzir a margem para telas menores */
 }
 
 nav a {
@@ -34,48 +29,62 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff9900; /* Cor do texto quando o mouse está sobre o link */
+    color: #ff9900;
 }
 
-.projetc-container{
+.project-container {
     background-color: white;
-    width: 600px;
+    max-width: 90%; /* Em telas grandes, a largura máxima é 90% */
+    margin: 0 auto; /* Centraliza a caixa no meio da tela */
     border-radius: 5px;
-    margin-left: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 5%; /* Ajuste para telas menores */
 }
 
-.projetc-container h3{
-    color: black;
-    padding: 10px;
+.project-container h3 {
+    color: white;
+    padding: 20px;
 }
 
-.projetc-container p{
-    color: #333;
+.project-container p {
+    color: white;
     font-size: 13px;
     padding: 10px;
-    margin-top: -30px;
+    margin-top: -15px; /* Ajusta o espaçamento superior */
 }
 
 .project-links {
-    position: relative;
     background: #fc601f;
-    width: 300px;
     opacity: 0.8;
-    left: 150px;
     border-radius: 2px;
-    top: -2px;
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 .project-links a {
-display: flex;
     color: white;
-    justify-content: center;
     text-decoration: none;
 }
 
 .project-image {
-    position: absolute;
-    margin-top: -80px;
-    padding: 10px;
-    margin-left: 500px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 0; /* Removido o deslocamento absoluto */
+}
+
+/* Adicione uma media query para ajustar o layout em telas menores */
+@media screen and (max-width: 768px) {
+    .project-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .project-links {
+        width: 100%;
+        left: 0;
+        margin-top: 0;
+    }
 }
