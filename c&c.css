@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: black;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #ff9900; /* Cor do texto quando o mouse está sobre o link */
+}
+
+.projetc-container{
+    background-color: white;
+    width: 600px;
+    border-radius: 5px;
+    margin-left: 300px;
+}
+
+.projetc-container h3{
+    color: #333;
+    padding: 10px;
+}
+
+.projetc-container p{
+    color: white;
+}
+
+.project-links {
+    position: relative;
+    background: black;
+    width: 300px;
+    opacity: 0.8;
+    left: 150px;
+    border-radius: 2px;
+    top: -2px;
+}
+
+.project-links a {
+display: flex;
+    color: white;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.project-image {
+    position: absolute;
+    margin-top: -40px;
+    padding: 10px;
+}
+
+.arrow{
+    position: relative;
+    right: 650px;
+}
