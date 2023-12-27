@@ -1,3 +1,8 @@
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caveat&family=Poppins:wght@400;700&family=Wallpoet&display=swap');
 
 * {
