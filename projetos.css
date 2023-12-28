@@ -1,7 +1,12 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    background: white;
+    background: black;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
@@ -18,7 +23,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 10px; /* Reduzir a margem para telas menores */
+    margin-right: 20px;
 }
 
 nav a {
@@ -29,29 +34,32 @@ nav a {
 }
 
 nav a:hover {
-    color: #ff9900;
+    color: #ff9900; /* Cor do texto quando o mouse está sobre o link*/
 }
 
-.project-container {
+
+
+.projetc-container {
     background-color: white;
-    max-width: 90%; /* Em telas grandes, a largura máxima é 90% */
-    margin: 0 auto; /* Centraliza a caixa no meio da tela */
+    max-width: 600px;
+    width: 90%;
     border-radius: 5px;
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
     padding: 20px;
     box-sizing: border-box;
-    margin-left: 5%; /* Ajuste para telas menores */
+    margin-top: 20px; /* Adiciona espaço acima do contêiner */
 }
 
-.project-container h3 {
-    color: white;
-    padding: 20px;
+.projetc-container h3 {
+    color: black;
+    padding: 10px;
 }
 
-.project-container p {
-    color: white;
+.projetc-container p {
+    color: #333;
     font-size: 13px;
     padding: 10px;
-    margin-top: -15px; /* Ajusta o espaçamento superior */
+    margin-top: 10px; /* Ajusta o espaçamento superior */
 }
 
 .project-links {
@@ -59,8 +67,8 @@ nav a:hover {
     opacity: 0.8;
     border-radius: 2px;
     padding: 10px;
-    margin-top: 10px;
-    text-align: center;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    margin-top: 20px; /* Adiciona espaço acima do .project-links */
 }
 
 .project-links a {
@@ -69,22 +77,25 @@ nav a:hover {
 }
 
 .project-image {
-    position: relative;
+    position: relative; /* Alterado de 'absolute' para 'relative' */
     text-align: center;
-    margin-top: 20px;
-    margin-left: 0; /* Removido o deslocamento absoluto */
+    margin-top: 20px; /* Ajusta o espaçamento superior */
 }
 
 /* Adicione uma media query para ajustar o layout em telas menores */
 @media screen and (max-width: 768px) {
-    .project-container {
-        width: 100%;
-        margin-left: 0;
+    .projetc-container {
+        width: 95%;
     }
 
     .project-links {
         width: 100%;
         left: 0;
-        margin-top: 0;
+        margin-top: 10px;
+    }
+
+    .project-image {
+        margin-top: 10px;
+        margin-left: 0; /* Remove o deslocamento lateral */
     }
 }
