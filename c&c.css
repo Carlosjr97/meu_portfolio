@@ -32,46 +32,58 @@ nav a:hover {
     color: #ff9900; /* Cor do texto quando o mouse está sobre o link */
 }
 
-.projetc-container{
+.projetc-container {
     background-color: white;
-    width: 600px;
+    max-width: 600px;
+    width: 90%;
     border-radius: 5px;
-    margin-left: 300px;
+    margin: 0 auto; /* Centraliza o contêiner horizontalmente */
+    padding: 20px;
+    box-sizing: border-box;
+    margin-top: 20px; /* Adiciona espaço acima do contêiner */
 }
 
-.projetc-container h3{
+.projetc-container h3 {
     color: #333;
     padding: 10px;
 }
 
-.projetc-container p{
-    color: white;
+.projetc-container p {
+    color: #333; /* Cor corrigida para texto dentro do .projetc-container */
 }
 
 .project-links {
-    position: relative;
     background: black;
-    width: 300px;
     opacity: 0.8;
-    left: 150px;
     border-radius: 2px;
-    top: -2px;
+    padding: 10px;
+    text-align: center; /* Centraliza o texto horizontalmente */
 }
 
 .project-links a {
-display: flex;
     color: white;
-    justify-content: center;
     text-decoration: none;
 }
 
 .project-image {
-    position: absolute;
-    margin-top: -40px;
-    padding: 10px;
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.arrow{
-    position: relative;
-    right: 650px;
+/* Adicione uma media query para ajustar o layout em telas menores */
+@media screen and (max-width: 768px) {
+    .projetc-container {
+        width: 95%;
+    }
+
+    .project-links {
+        width: 100%;
+        left: 0;
+        margin-top: 10px;
+    }
+
+    .project-image {
+        margin-top: 10px;
+    }
 }
