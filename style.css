@@ -271,16 +271,11 @@ body {
 
 
 footer {
-  background-color: transparent;
-  color: white;
-  padding: 10px 0;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  text-align: center;
+  margin-top: -100px;
 }
 
 button {
-  position: absolute;
   padding: 10px 20px;
   font-size: 16px;
   background-color: #940029;
@@ -288,25 +283,17 @@ button {
   border: none;
   cursor: pointer;
   animation: pulse 1s infinite;
-  right: 270px;
-  top: -140%;
-  display: flex;
 }
 
 @keyframes pulse {
   0% {
-      transform: scale(1);
+    transform: scale(1);
   }
   50% {
-      transform: scale(1.2);
+    transform: scale(1.2);
   }
   100% {
-      transform: scale(1);
+    transform: scale(1);
   }
 }
 
-@media screen and (max-width: 768px) {
-  button {
-    right: 175px;
-  }
-}
