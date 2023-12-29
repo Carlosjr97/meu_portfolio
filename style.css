@@ -306,7 +306,6 @@ button {
 
 @media screen and (max-width: 768px) {
   button {
-    flex-direction: column;
     right: 100px;
   }
 }
