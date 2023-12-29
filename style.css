@@ -292,7 +292,7 @@ footer {
 @media (max-width: 599px) {
   footer {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   button {
@@ -321,6 +321,3 @@ button {
     transform: scale(1);
   }
 }
-
-
-
