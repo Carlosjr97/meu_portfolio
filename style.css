@@ -86,6 +86,7 @@ body {
   font-size: 4.5rem;
   line-height: 6rem;
 
+
   animation: written_text .5s ease forwards;
 }
 
@@ -196,6 +197,7 @@ body {
 }
 
 .links img {
+  width: 15px;
   position: relative;
  margin-left: 8px;
  top: -20px;
@@ -243,6 +245,8 @@ body {
   }
 }
 
+
+
 /* Tornar a seção #person mais responsiva */
 @media screen and (max-width: 768px) {
   #person {
@@ -264,3 +268,45 @@ body {
 }
 
 /* Adicionar mais media queries conforme necessário */
+
+
+footer {
+  background-color: transparent;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+button {
+  position: absolute;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #940029;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+  right: 270px;
+  top: -140%;
+}
+
+@keyframes pulse {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(1.2);
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  button {
+    flex-direction: column;
+    right: 100px;
+  }
+}
