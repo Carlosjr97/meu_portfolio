@@ -290,6 +290,7 @@ button {
   animation: pulse 1s infinite;
   right: 270px;
   top: -140%;
+  display: flex;
 }
 
 @keyframes pulse {
@@ -306,6 +307,6 @@ button {
 
 @media screen and (max-width: 768px) {
   button {
-    right: 100px;
+    right: 175px;
   }
 }
