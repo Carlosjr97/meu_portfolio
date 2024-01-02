@@ -32,6 +32,14 @@ nav a:hover {
     color: #ff9900; /* Cor do texto quando o mouse está sobre o link */
 }
 
+.links img {
+    width: 15px;
+    position: relative;
+   margin-left: 8px;
+   top: -20px;
+   left: 950px;
+  }
+
 .projetc-container {
     background-color: white;
     max-width: 600px;
@@ -88,3 +96,27 @@ nav a:hover {
     }
 }
 
+/* Tornar o header mais compacto em telas pequenas */
+@media screen and (max-width: 600px) {
+    header {
+      padding: 0;
+    }
+  
+    nav li {
+      margin-right: 10px;
+    }
+  
+    nav a {
+      position: relative;
+      right: 60px;
+      font-size: 10px;
+      top: 5px;
+    }
+  
+    .links img {
+      width: 15px;
+      left: 90%;
+      top: -13px;
+      transform: translateX(-50%);
+    }
+  }
