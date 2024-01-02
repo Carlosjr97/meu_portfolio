@@ -303,8 +303,8 @@ footer {
 
 /* Estilos comuns para ambas as telas */
 button {
-  background-color: #940029;
-  color: #fff;
+  background-color: #ffc514;
+  color: black ;
   border: none;
   cursor: pointer;
   animation: pulse 1s infinite;
