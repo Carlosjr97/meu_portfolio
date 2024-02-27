@@ -36,7 +36,7 @@ nav a {
 
 
 nav a:hover {
-  color: #940029; /* Cor do texto quando o mouse está sobre o link */
+  color: #ffc514; /* Cor do texto quando o mouse está sobre o link */
 }
 :root {
   --color-white: white;
