@@ -1,107 +1,86 @@
-<!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./img/resume.png" type="image/x-icon">
+  <title>CarlosJR</title>
   <link rel="stylesheet" href="style.css">
-  
-  <title>Portfólio - Carlos Jr</title>
 </head>
-
 <body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#inicio">Início</a></li>
+      <li><a onclick="redirecionarprojeto()" href="#projetos">Projetos</a></li>
+      <li><a onclick="redirecionarcursos()" href="#cursos">Certificados</a></li>
+    </ul>
+  </nav>
+
+
   <header>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a onclick="redirecionarprojeto()" href="#projetos">Projetos</a></li>
-            <li><a onclick="redirecionarcursos()" href="#cursos">Cursos e Certificados</a></li>
-        </ul>
-
-        <div class="links">
-          <a href="https://wa.me/5516988613054" target="_blank">
-            <img src="./img/whatsapp.png" alt="icon-whatsapp">
-          </a>
-          <a href="https://www.instagram.com/cjunior1009/" target="_blank">
-            <img src="./img/instagram.png" alt="icon-instagram">
-          </a>
-          <a href="https://www.linkedin.com/in/carlos-junior97/" target="_blank">
-            <img src="./img/linkedin.png" alt="icon-linkedin">
-          </a>
-          <a href="https://github.com/Carlosjr97" target="_blank">
-            <img src="./img/github.png" alt="icon-github">
-          </a>
-          </div>
-
-    </nav>
-</header>
-<section id="person">
-  <div class="person-content">
-    <div class="person-name">
-      <h1>Olá,</h1>
-      <h1>Meu nome é</h1>
-      <h1>Carlos Junior</h1>
+    <img src="./img/my.jpeg" alt="Sua foto">
+    <h2>Bem-vindo ao meu portfólio</h2>
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/carlos-junior97/" target="_blank"><img class="linkedin" src="./img/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Carlosjr97" target="_blank"><img class="github" src="./img/github.png" alt="GitHub"></a>
+    </div>
+  </header>
+  <div class="container">
+    <a href="./img/cv.pdf" download class="download-button">
+    <button class="curriculo-btn">Download CV</button>
+  </a>
     </div>
 
-    <div class="stacks-content">
-      <h3>Techs :</h3>
 
-      <div class="stacks">
-        <ul>
-          <li>
-            <div>
-            <img src="./img/sql-server.png" alt="sql">
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-            <img src="./img/excel.png" alt="excel">
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-            <img src="./img/python.png" alt="python">
-            </div>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <div>
-            <img src="./img/dashboard.png" alt="dashboard">
-            </div>
-          </li>
-        </ul>
+
+
+  <main>
+    <section id="techs">
+      <div class="stacks-content">
+        <h3>Techs :</h3>
+  
+        <div class="stacks">
+          <ul>
+            <li>
+              <div>
+              <img src="./img/sql-server.png" alt="sql">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+              <img src="./img/python.png" alt="python">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+              <img src="./img/excel.png" alt="excel">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+              <img src="./img/powerbi.png" alt="powerbi">
+              </div>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <div>
+              <img src="./img/Tableau-Logo.png" alt="tableau">
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="person-background">
-    <div class="wrapper-profile-photo">
-    <img class="profile-photo" src="./img/1703605623359.png" alt="eu">
-    </div>
+    </section>
+  </main>
 
-
-
-</section>
-<script>
-  function redirecionarcursos() {
-          window.location.href = "c&c.html"
-}
-
-function redirecionarprojeto() {
-          window.location.href = "projetos.html"
-}
-</script>
-
-<footer>
-  <a href="./img/cv.pdf" download class="download-button">
-    <button>Baixar currículo</button>
-  </a>
-</footer>
 
 </body>
 </html>
