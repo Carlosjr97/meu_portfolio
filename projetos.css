@@ -1,7 +1,7 @@
-header {
-  position: relative;
-  background-color: #333;
-  padding: 0px 0px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 nav ul {
@@ -27,27 +27,11 @@ nav a {
 
 
 nav a:hover {
-  color
-
-
-
-
-
-
-
-
-
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  color: #ffc514; /* Cor do texto quando o mouse está sobre o link */
 }
-
-header {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
+.navbar{
+  background-color: black;
+  padding: 15px;
 }
 
 .projects {
