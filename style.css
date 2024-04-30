@@ -1,17 +1,130 @@
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Caveat&family=Poppins:wght@400;700&family=Wallpoet&display=swap');
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
-
 
 header {
-  position: relative;
-  background-color: #333;
-  padding: 0px 0px;
+  text-align: center;
+  padding: 50px 0;
 }
+
+header img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+
+.linkedin{
+  width: 30px;
+}
+.github{
+  width: 30px;
+}
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: -260px;
+}
+
+.curriculo-btn {
+  background-color: #4CAF50; /* Cor de fundo padrão */
+  color: white; /* Cor do texto padrão */
+  padding: 11px 25px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s; /* Transição de cor de fundo */
+}
+
+.curriculo-btn:hover {
+  background-color: #45a049; /* Nova cor de fundo ao passar o mouse */
+}
+
+
+
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer a {
+  text-decoration: none;
+  color: blue;
+}
+
+main {
+  text-align: center;
+  padding: 0px 0;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+section h3 {
+  font-size: 24px;
+}
+
+section p {
+  font-size: 18px;
+}
+
+#techs{
+ margin-top: -100px;
+}
+
+
+
+.stacks-content h3{
+  color: var(--color-white);
+  font-size: 1.15rem;
+
+  margin-left: 20px;
+}
+
+.stacks{
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: row;
+}
+
+.stacks ul li{
+  display: flex;
+  align-items: center;
+  
+  position: relative;
+
+  list-style: none;
+
+  margin: 10px;
+  padding: 10px;
+}
+
+.stacks ul li div img:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+
 
 nav ul {
   list-style: none;
@@ -38,289 +151,13 @@ nav a {
 nav a:hover {
   color: #ffc514; /* Cor do texto quando o mouse está sobre o link */
 }
-:root {
-  --color-white: white;
-  --color-pink: #d12f7a;
-  --color-blue: #940029;
-  --color-black: black;
-  --color-purple: #5f01ac;
-}
-
-html {
-  scroll-behavior: smooth;
-  font-size: 10px;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;   
-}
-
-#person {
-  height: 100vh;
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  background: red;
-}
-
-.person-content {
-  height: 100%;
-  width: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  flex-direction: column;
-
-  background: var(--color-black);
-}
-
-
-.person-content div h1{
-  color: transparent;
-
-  padding: 0px 4px;
-
-  font-size: 4.5rem;
-  line-height: 6rem;
-
-
-  animation: written_text .5s ease forwards;
-}
-
-.person-content div h1:nth-child(1){
-  animation-delay: 1s;
-}
-
-.person-content div h1:nth-child(2){
-  animation-delay: 2s;
-}
-
-.person-content div h1:nth-child(3){
-  animation: written_text_name .5s ease forwards;
-  animation-delay: 3s;
-}
-
-.person-name{
-  margin-top: 11rem;
-}
-
-.stacks-content{
-  display: flex;
-  /*lign-items: center;*/
-  justify-content: center;
-
-  flex-direction: column;
-  margin-top: 6rem;
-}
-
-.stacks-content h3{
-  color: var(--color-white);
-  font-size: 1.15rem;
-
-  margin-left: 20px;
-}
-
-.stacks{
-  display: flex;
-
-  align-items: center;
-
-  flex-direction: row;
-}
-
-.stacks ul li{
-  display: flex;
-  align-items: center;
-  
-  position: relative;
-
-  list-style: none;
-
-  margin: 10px;
-  padding: 10px;
-}
-
-.stacks ul li div img:hover{
-  transform: scale(1.2);
-  cursor: pointer;
-}
-
-.person-background {
-  height: 100vh;
-  width: 70%;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  position: relative;
-  flex-direction: column;
-
-  background-image: url(./img/1826260.jpg);
-  background-size: cover;
-  background-position: top center;
-}
-
-.person-background::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  height: 100%;
-  width: 100%;
-}
-
-.wrapper-profile-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 14px;
-  margin: 20px 15px;
-
-  /*border-radius: 50%;
-  background: 
-  radial-gradient(rgba(0,0,0,0.15) 60%, transparent 0),
-  radial-gradient(#000 68%, transparent 0),
-  linear-gradient(to top right, #c1013f 0%, #e43f73 100%);
-  */
-}
-
-.profile-photo{
-  width: 40%;
-  border-radius: 50%;
-  background: linear-gradient(to top right, #940029 30%, #e54275 100%);
-}
-
-.links img {
-  width: 15px;
-  position: relative;
- margin-left: 8px;
- top: -20px;
- left: 950px;
-}
-
-@keyframes written_text {
-  100% {
-    color: var(--color-white);
-  }
-}
-
-@keyframes written_text_name {
-  100% {
-    color: var(--color-blue);
-  }
+.navbar{
+  background-color: black;
+  padding: 15px;
 }
 
 
 
-/* Adicione estas regras no final do seu CSS existente */
-
-/* Tornar o header mais compacto em telas pequenas */
-@media screen and (max-width: 600px) {
-  header {
-    padding: 0;
-  }
-
-  nav li {
-    margin-right: 10px;
-  }
-
-  nav a {
-    position: relative;
-    right: 60px;
-    font-size: 10px;
-    top: 5px;
-  }
-
-  .links img {
-    width: 15px;
-    left: 90%;
-    top: -13px;
-    transform: translateX(-50%);
-  }
-}
-
-
-
-/* Tornar a seção #person mais responsiva */
-@media screen and (max-width: 768px) {
-  #person {
-    flex-direction: column;
-  }
-
-  .person-content {
-    width: 100%;
-    text-align: center;
-  }
-
-  .person-background {
-    width: 100%;
-  }
-
-  .profile-photo {
-    width: 80%;
-  }
-}
-
-/* Adicionar mais media queries conforme necessário */
-
-
-footer {
-  text-align: center;
-  margin-top: -100px;
-}
-
-/* Estilos para telas grandes (por exemplo, telas maiores que 600px) */
-@media (min-width: 600px) {
-  footer {
-    text-align: center;
-    margin-top: -100px;
-  }
-
-  button {
-    padding: 15px 30px;
-    font-size: 18px;
-  }
-}
-
-/* Estilos para telas pequenas (por exemplo, telas menores que 600px) */
-@media (max-width: 599px) {
-  footer {
-    text-align: center;
-    margin-top: -50px;
-  }
-
-  button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-}
-
-/* Estilos comuns para ambas as telas */
-button {
-  background-color: #ffc514;
-  color: black ;
-  border: none;
-  cursor: pointer;
-  animation: pulse 1s infinite;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 
 
