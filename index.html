@@ -1,85 +1,66 @@
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./img/resume.png" type="image/x-icon">
-  <title>CarlosJR</title>
+  <title>Portfólio - Carlos Jr</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-    <ul>
+
+<nav class="navbar">
+  <div class="container">
+    <div class="menu-toggle">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-btn">&#9776;</label>
+    </div>
+    <ul class="menu">
       <li><a href="#inicio">Início</a></li>
       <li><a onclick="redirecionarprojeto()" href="#projetos">Projetos</a></li>
-      <li><a onclick="redirecionarcertificados()" href="#certificados">Certificados</a></li>
+      <li><a  onclick="redirecionarcertificados()" href="#certificados">Certificados</a></li>
     </ul>
-  </nav>
+  </div>
+</nav>
 
-
-  <header>
-    <img src="./img/my.jpeg" alt="Sua foto">
-    <h2>Bem-vindo ao meu portfólio</h2>
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/carlos-junior97/" target="_blank"><img class="linkedin" src="./img/linkedin.png" alt="LinkedIn"></a>
-      <a href="https://github.com/Carlosjr97" target="_blank"><img class="github" src="./img/github.png" alt="GitHub"></a>
-    </div>
-  </header>
-  <div class="container">
-    <a href="./img/cv.pdf" download class="download-button">
-    <button class="curriculo-btn">Download CV</button>
-  </a>
-    </div>
-
-
-
-
-  <main>
-    <section id="techs">
-      <div class="stacks-content">
-        <h3>Techs :</h3>
-  
-        <div class="stacks">
-          <ul>
-            <li>
-              <div>
-              <img src="./img/sql-server.png" alt="sql">
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div>
-              <img src="./img/python.png" alt="python">
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div>
-              <img src="./img/excel.png" alt="excel">
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div>
-              <img src="./img/powerbi.png" alt="powerbi">
-              </div>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <div>
-              <img src="./img/Tableau-Logo.png" alt="tableau">
-              </div>
-            </li>
-          </ul>
-        </div>
+<div class="image-container">
+  <img src="./img/analitycs.gif" alt="Descrição da imagem">
+  <div class="typing-effect">
+    <p>Seja bem-vindo ao meu portfólio</p>
+  </div>
+</div>
+<div class="social-icons">
+  <a href="https://github.com/Carlosjr97" target="_blank"><img src="./img/github.png" alt="GitHub Icon" class="icon"></a>
+  <a href="https://www.linkedin.com/in/carlos-junior97/" target="_blank"><img src="./img/linkedin.png" alt="LinkedIn Icon" class="icon"></a>
+      <!-- Novo elemento para o botão de download -->
+      <div class="download-button-container">
+        <a href="./img/cv.pdf" download class="download-button">Baixar Currículo</a>
       </div>
-    </div>
-    </section>
-  </main>
+</div>
+</a>
+<br>
+<br>
+<br>
+
+<!-- Lista ordenada horizontal com imagens -->
+<h2>Techs</h2>
+<br>
+<ul class="responsive-list">
+  <li><img src="./img/SQL.png" alt="SQL Logo"></li>
+  <li><img src="./img/python.png" alt="Python Logo"></li>
+  <li><img src="./img/excel.png" alt="Excel Logo"></li>
+  <li><img src="./img/metrica.png" alt="Tableau Logo"></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<div class="contact-me">
+  <p>Para entrar em contato, envie um e-mail para:</p>
+  <a href="mailto:cbarbosa1009@gmail.com">cbarbosa1009@gmail.com</a>
+</div>
+
 <script>
   function redirecionarcertificados() {
           window.location.href = "c&c.html"
