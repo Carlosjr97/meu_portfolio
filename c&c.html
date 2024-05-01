@@ -1,85 +1,97 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./img/resume.png" type="image/x-icon">
-  <link rel="stylesheet" href="c&c.css">
-  
   <title>Portfólio - Carlos Jr</title>
+  <link rel="stylesheet" href="projetos.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a onclick="redirecionarinicio()"href="#inicio">Início</a></li>
-            <li><a onclick="redirecionarprojetos()"href="#projetos">Projetos</a></li>
-            <li><a href="#certificados">Certificados</a></li>
-        </ul>
-    
-        </nav>
-    <section class="certificados">
-        <div class="certificado">
-            <img src="./img/sql-para-analise.jpg" alt="certificado 1">
-            <a href="https://www.udemy.com/certificate/UC-e10675c9-cae0-4cd4-a32c-790448f031f6/" target="_blank">ACESSAR CERTIFICADO</a>
-        </div>
 
-        <div class="certificado">
-            <img src="./img/estatistica.jpg" alt="certificado 2">
-            <a href="https://www.udemy.com/certificate/UC-26cabbf4-b592-4d28-b778-7529da9e60c6/" target="_blank">ACESSAR CERTIFICADO</a>
-        </div>
-
-        <div class="certificado">
-            <img src="./img/hashtag.jpg" alt="certificado 3">
-            <a href="https://drive.google.com/file/d/12aGgm-VeZq9mOZOBAUO5gsng7Yxh1294/view" target="_blank">ACESSAR CERTIFICADO</a>
-        </div>
-
-        <div class="certificado">
-            <img src="./img/bradesco1.jpg" alt="certificado 4">
-            <a href="https://drive.google.com/file/d/1yHxewN7PMJ7t_P97NUsC38NhbLDK50GH/view" target="_blank">ACESSAR CERTIFICADO</a>
-        </div>
-
-        
-        <div class="certificado">
-          <img src="./img/bradesco.jpg" alt="certificado 5">
-          <a href="https://drive.google.com/file/d/1yIJNx6V9NLQPf4XbvAGKOiWt3epw-IDi/view" target="_blank">ACESSAR CERTIFICADO</a>
-      </div>
-
-      <div class="certificado">
-        <img src="./img/tableau.jpg" alt="certificado 6">
-        <a href="https://www.udemy.com/certificate/UC-500af1f9-8207-4f71-84f1-87cbaf923353/" target="_blank">ACESSAR CERTIFICADO</a>
+<nav class="navbar">
+  <div class="container">
+    <div class="menu-toggle">
+      <input type="checkbox" id="toggle">
+      <label for="toggle" class="toggle-btn">&#9776;</label>
     </div>
-
-    <div class="certificado">
-      <img src="./img/power.jpg" alt="certificado 7">
-      <a href="https://www.udemy.com/certificate/UC-006f109e-d0b1-4be1-b51a-d4a77554920a/" target="_blank">ACESSAR CERTIFICADO</a>
+    <ul class="menu">
+      <li><a onclick="redirecionarinicio()" href="#inicio">Início</a></li>
+      <li><a onclick="redirecionarprojetos()" href="#projetos">Projetos</a></li>
+      <li><a href="#certificados">Certificados</a></li>
+    </ul>
   </div>
+</nav>
 
-  <div class="certificado">
-    <img src="./img/design.jpg" alt="certificado 8">
-    <a href="https://www.udemy.com/certificate/UC-042b651a-0c84-4934-800a-9b2baf61c89c/" target="_blank">ACESSAR CERTIFICADO</a>
+<br>
+
+<div class="grid-container">
+  <div class="grid-item">
+    <img src="./img/sql-para-analise.jpg" alt="certificado 1">
+    <a href="https://www.udemy.com/certificate/UC-e10675c9-cae0-4cd4-a32c-790448f031f6/" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/estatistica.jpg" alt="certificado 2">
+    <a href="https://www.udemy.com/certificate/UC-26cabbf4-b592-4d28-b778-7529da9e60c6/" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/tableau.jpg" alt="certificado 3">
+    <a href="https://www.udemy.com/certificate/UC-500af1f9-8207-4f71-84f1-87cbaf923353/" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/power.jpg" alt="certificado 4">
+    <a href="https://www.udemy.com/certificate/UC-006f109e-d0b1-4be1-b51a-d4a77554920a/" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/design.jpg" alt="certificado 5">
+    <a href="https://www.udemy.com/certificate/UC-042b651a-0c84-4934-800a-9b2baf61c89c/" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/eng-dados.jpg" alt="certificado 6">
+    <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-19665bc8-617f-4d72-9464-db40c2eb0aa1.jpg" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/hashtag.jpg" alt="certificado 7">
+    <a href="https://drive.google.com/file/d/12aGgm-VeZq9mOZOBAUO5gsng7Yxh1294/view" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/bradesco.jpg" alt="certificado 8">
+    <a href="https://drive.google.com/file/d/1yIJNx6V9NLQPf4XbvAGKOiWt3epw-IDi/view" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
+  <div class="grid-item">
+    <img src="./img/bradesco1.jpg" alt="certificado 9">
+    <a href="https://drive.google.com/file/d/1yHxewN7PMJ7t_P97NUsC38NhbLDK50GH/view" target="_blank" class="overlay">
+      <span class="text">Acessar Certificado</span>
+    </a>
+  </div>
 </div>
 
-<div class="certificado">
-  <img src="./img/eng-dados.jpg" alt="certificado 9">
-  <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-19665bc8-617f-4d72-9464-db40c2eb0aa1.jpg" target="_blank">ACESSAR CERTIFICADO</a>
-</div>
+<script>
+  function redirecionarprojetos() {
+          window.location.href = "projetos.html"
+}
 
-      
-    </section>
+function redirecionarinicio() {
+          window.location.href = "index.html"
+}
+</script>
 
-
-    <script>
-        function redirecionarinicio() {
-                window.location.href = "index.html"
-    }
-
-    function redirecionarprojetos() {
-                window.location.href = "projetos.html"
-    }
-      </script>
 </body>
 </html>
 
-        
